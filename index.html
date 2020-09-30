@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Events exercise</title>
+</head>
+<body>
+  <div class="container">
+	<h1>Crazy Colors</h1>
+	<p>
+		<h3 id="hints">note:</h3>
+		<ul id="hints">
+		<li>the user cant enter any value except( 0-9 or a,b,c,d,e,f),because the hexa color contain only this latters.</li>
+		<li>the user cant enter more than 6 digits also because the hexa can contains only three or six digits.</li>
+		<li>enter the number without '#'.</li>
+	   </ul>
+	</p>
+	<div class="flex">
+		<div class="pallete" id="pallete">
+			paint me
+		</div>
+		<div class="control">
+			<button id="btn-random">Choose random color</button>
+			OR
+			<label for="color" class="color-input" >
+				type hexa color
+			</label>
+				<input type="text" id="color"/>
+		</div>
+	</div>
+  </div>
+  <!-- colors.js should be above index.js so you can access the variable colors inside index.js -->
+  <script src="./js/colors.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
